@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "fontkit",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:VishwaiOSDev/FontKit.git",
+      "state" : {
+        "revision" : "c0f89b14d0f6dd70b20cda4004b1b120a58429b2",
+        "version" : "0.0.5"
+      }
+    },
+    {
+      "identity" : "logkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VishwaiOSDev/LogKit",
+      "state" : {
+        "revision" : "9dd0dce3dc8ddf8f32a56abad595d4938525d464",
+        "version" : "0.0.9"
+      }
+    }
+  ],
+  "version" : 2
+}
