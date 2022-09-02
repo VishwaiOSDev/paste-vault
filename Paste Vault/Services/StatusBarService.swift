@@ -28,7 +28,7 @@ class StatusBarService {
         } else {
             guard let menuButton = statusItem.button else { return }
             popover.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: .minY)
-            /// This piece of code will make sure to select `PasteVolt` as a keyView
+            /// This piece of code will make sure to select `Paste Vault` as a keyView
             popover.contentViewController?.view.window?.makeKeyAndOrderFront(nil)
         }
     }

@@ -61,7 +61,8 @@ final class PasteboardService: PasteboardServiceProtocol, PasteboardUtilsProtoco
         guard let pasteboardContent = pasteboardItems.first else { return }
         guard let content = pasteboardContent.string(forType: .string) else { return }
         recentlyCopiedText.send(content.trim)
-        Log.info("PUBLISHED THE COPIED CONTENT: \(content.trim)")
+        /// For `debug` purpose to log the content in the console
+        //  Log.info("PUBLISHED THE COPIED CONTENT: \(content.trim)")
     }
     
     func stopPolling() {
