@@ -65,4 +65,4 @@ We use GitHub issues to track public bugs. Report a bug by  [opening a new issue
 People  _love_  thorough bug reports. I'm not even kidding.
 
 # License
-LogKit is released under the MIT license.
+Paste Vault is released under the MIT license.
