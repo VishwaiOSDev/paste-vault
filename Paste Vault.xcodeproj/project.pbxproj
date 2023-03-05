@@ -22,9 +22,10 @@
 		8879EB3828BD1ACB0033AD4E /* BlueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879EB3728BD1ACB0033AD4E /* BlueTheme.swift */; };
 		8879EB3B28BD1AFF0033AD4E /* TomatoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879EB3A28BD1AFF0033AD4E /* TomatoTheme.swift */; };
 		8879EB3D28BD1B520033AD4E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879EB3C28BD1B520033AD4E /* ThemeManager.swift */; };
-		8881B49D28A0C80F00F6914E /* LogKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8881B49C28A0C80F00F6914E /* LogKit */; };
 		8885AE99288E60D000B25543 /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885AE98288E60D000B25543 /* HoverButton.swift */; };
 		8885AE9B288E63CE00B25543 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885AE9A288E63CE00B25543 /* Helper.swift */; };
+		888A311E29B4F6A300A7F7D3 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A311D29B4F6A300A7F7D3 /* Logger+Extension.swift */; };
+		888A312029B4F6CB00A7F7D3 /* LoggerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 888A311F29B4F6CB00A7F7D3 /* LoggerKit */; };
 		888A923B288D92C900E14E85 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A923A288D92C900E14E85 /* CoreDataStore.swift */; };
 		888A923E288D958100E14E85 /* Paste+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A923C288D958100E14E85 /* Paste+CoreDataClass.swift */; };
 		888A923F288D958100E14E85 /* Paste+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A923D288D958100E14E85 /* Paste+CoreDataProperties.swift */; };
@@ -73,6 +74,7 @@
 		8879EB3C28BD1B520033AD4E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		8885AE98288E60D000B25543 /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
 		8885AE9A288E63CE00B25543 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		888A311D29B4F6A300A7F7D3 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		888A9238288D923E00E14E85 /* PasteVaultModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasteVaultModel.xcdatamodel; sourceTree = "<group>"; };
 		888A923A288D92C900E14E85 /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
 		888A923C288D958100E14E85 /* Paste+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Paste+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -109,9 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8881B49D28A0C80F00F6914E /* LogKit in Frameworks */,
 				88577E45288843A40089C3CF /* FontKit in Frameworks */,
 				88577E43288843A40089C3CF /* FontInter in Frameworks */,
+				888A312029B4F6CB00A7F7D3 /* LoggerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +310,7 @@
 				8807F6FA288A4EC300FED19B /* View+Extension.swift */,
 				88750CCB288D35E300FEDE37 /* Task+Extension.swift */,
 				88B5F95628BB8995006C1F1D /* NSManagedObjectContext+Extension.swift */,
+				888A311D29B4F6A300A7F7D3 /* Logger+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,7 +378,7 @@
 			packageProductDependencies = (
 				88577E42288843A40089C3CF /* FontInter */,
 				88577E44288843A40089C3CF /* FontKit */,
-				8881B49C28A0C80F00F6914E /* LogKit */,
+				888A311F29B4F6CB00A7F7D3 /* LoggerKit */,
 			);
 			productName = PasteBoard;
 			productReference = 88BC5C782883D342003DE8C6 /* Paste Vault.app */;
@@ -482,6 +485,7 @@
 				883821BC28BD007C0031C45A /* ThemeSwitcher.swift in Sources */,
 				883D2BC528BE4676003DD787 /* TealTheme.swift in Sources */,
 				8885AE9B288E63CE00B25543 /* Helper.swift in Sources */,
+				888A311E29B4F6A300A7F7D3 /* Logger+Extension.swift in Sources */,
 				883D2BC728BE49D2003DD787 /* BluishTheme.swift in Sources */,
 				8807F6FF288A639600FED19B /* MenuBarView.swift in Sources */,
 				8879EB3828BD1ACB0033AD4E /* BlueTheme.swift in Sources */,
@@ -763,7 +767,7 @@
 			repositoryURL = "https://github.com/VishwaiOSDev/LogKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.6;
+				minimumVersion = 1.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -779,10 +783,10 @@
 			package = 88577E41288843A40089C3CF /* XCRemoteSwiftPackageReference "FontKit" */;
 			productName = FontKit;
 		};
-		8881B49C28A0C80F00F6914E /* LogKit */ = {
+		888A311F29B4F6CB00A7F7D3 /* LoggerKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8881B49B28A0C80F00F6914E /* XCRemoteSwiftPackageReference "LogKit" */;
-			productName = LogKit;
+			productName = LoggerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 

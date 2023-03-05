@@ -8,7 +8,7 @@
 import SwiftUI
 import AppKit
 import Combine
-import LogKit
+import LoggerKit
 
 typealias Pasteable = ObservableObject & PasteableActions
 
@@ -34,6 +34,7 @@ final class PasteViewModel: Pasteable {
         self.pasteboardService = pasteboardService
         self.storage = storage
         syncThePasteBoard()
+        Logger.initLifeCycle("PasteViewModel init", for: self)
     }
     
     func copyTheSelectedItem(_ contentToBeCopied: String) {
@@ -62,7 +63,7 @@ final class PasteViewModel: Pasteable {
     }
     
     deinit {
-        Log.info("Deinited.")
+        Logger.deinitLifeCycle("PasteViewModel deinit", for: self)
     }
 }
 
