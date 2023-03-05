@@ -6,7 +6,7 @@
 //
 
 import CoreData
-import LogKit
+import LoggerKit
 
 enum StorageType {
     case persistent, inMemory
@@ -29,9 +29,9 @@ class CoreDataStore {
             container.persistentStoreDescriptions = [description]
         }
         container.loadPersistentStores { description, error in
-            Log.verbose("CoreData \(storageType) storage is loaded.")
+            Logger.verbose("CoreData \(storageType) storage is loaded.")
             if let error = error {
-                Log.error("Setting up CoreData: \(error.localizedDescription)")
+                Logger.error("Setting up CoreData: \(error.localizedDescription)")
             }
         }
         container.viewContext.automaticallyMergesChangesFromParent = true
@@ -47,8 +47,8 @@ class CoreDataStore {
             do {
                 try self.bgContext.saveIfNeeded()
             } catch {
-                Log.error("Failed to save in BGContext")
-                Log.warning("Rolling back...")
+                Logger.error("Failed to save in BGContext")
+                Logger.verbose("Rolling back...")
                 self.bgContext.rollback()
             }
         }
@@ -64,8 +64,8 @@ class CoreDataStore {
                 item.isPinned.toggle()
                 try self.bgContext.saveIfNeeded()
             } catch {
-                Log.error("Failed to save in BGContext")
-                Log.warning("Rolling back...")
+                Logger.error("Failed to save in BGContext")
+                Logger.verbose("Rolling back...")
                 self.bgContext.rollback()
             }
         }
@@ -81,8 +81,8 @@ class CoreDataStore {
                 self.bgContext.delete(item)
                 try self.bgContext.saveIfNeeded()
             } catch {
-                Log.error("Failed to save in BGContext")
-                Log.warning("Rolling back...")
+                Logger.error("Failed to save in BGContext")
+                Logger.verbose("Rolling back...")
                 self.bgContext.rollback()
             }
         }
@@ -95,8 +95,8 @@ class CoreDataStore {
             try container.viewContext.execute(batchDeleteRequest)
             container.viewContext.reset()
         } catch {
-            Log.error("Error deleting all data from CoreData: \(error.localizedDescription)")
-            Log.warning("Rolling back...")
+            Logger.error("Error deleting all data from CoreData: \(error.localizedDescription)")
+            Logger.verbose("Rolling back...")
             container.viewContext.rollback()
         }
     }

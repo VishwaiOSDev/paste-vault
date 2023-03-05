@@ -7,7 +7,7 @@
 
 import AppKit
 import Combine
-import LogKit
+import LoggerKit
 
 protocol PasteboardServiceProtocol {
     var recentlyCopiedText: PassthroughSubject<String, Never> { get set }
