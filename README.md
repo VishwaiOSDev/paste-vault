@@ -9,25 +9,17 @@
 # Features
 
 - Show the copied text in the system status bar
-
     - Show all the copied texts
-
     - Show all the pinned texts
-
 - Show all the copied text with date segregation (e.g. Today, Yesterday)
-
 - Added multiple themes support
-
 - Copy the text on single click with beautiful animations
 
 # Setup
-
 ## Manual
 
 1. Clone this repo https://github.com/VishwaiOSDev/paste-vault.git from the GitHub.
-
 2. Open the project in Xcode
-
 3. Click on Run or `cmd + r` to run the project
 
 > **Note** 
@@ -36,7 +28,6 @@
 ## Contribute
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
-
 -   Reporting a bug
 -   Discussing the current state of the code
 -   Submitting a fix
@@ -44,17 +35,13 @@ We love your input! We want to make contributing to this project as easy and tra
 -   Becoming a maintainer
 
 ## We Develop with Github
-
 We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
 ## [](https://github.com/leits/MeetingBar#report-bugs-using-githubs-issues)Report bugs using Github's issues
-
 We use GitHub issues to track public bugs. Report a bug by  [opening a new issue](https://github.com/VishwaiOSDev/paste-vault/issues); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
-
 **Great Bug Reports**  tend to have:
-
 -   A quick summary and/or background
 -   Steps to reproduce
     -   Be specific!
