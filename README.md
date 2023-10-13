@@ -16,8 +16,6 @@
 - Copy the text on single click with beautiful animations
 
 # Setup
-## Manual
-
 1. Clone this repo https://github.com/VishwaiOSDev/paste-vault.git from the GitHub.
 2. Open the project in Xcode
 3. Click on Run or `cmd + r` to run the project
